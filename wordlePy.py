@@ -50,7 +50,7 @@ while playAgain:
             if letterCount > 0 and validation.count("*" + attempt[i] + "*") < letterCount and solutionArr[i] != 'found':
                 validation[i] = "*" + attempt[i] + "*"
 
-            # Letter not in answer at all
+            # Letter not in answer at all or too many of that letter
             elif solutionArr[i] != 'found':
                 validation[i] = "-" + attempt[i] + "-"
 
